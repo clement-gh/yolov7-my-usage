@@ -9,9 +9,7 @@ from zipfile import ZipFile
 def json_to_yolo( parent_dir, json_file):
     
     if not os.path.exists(json_file):
-        raise Exception(json_file + " was not found" 
-                        
-        )
+        raise Exception(json_file + " was not found" )
         
 
     # image directory
