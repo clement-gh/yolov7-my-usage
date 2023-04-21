@@ -55,11 +55,7 @@ def json_to_yolo( parent_dir, json_file):
                 # Itération sur les objets dans l'image
                 for i in range(len(bbox['label'])):
                     
-                    #si le label est 10 on le remplace par 0 
-                    if bbox['label'][i] == 10:
-                        bbox['label'][i] = 0
-                    
-                    
+                
                     # get coordinates of bounding box and label
                     # set label, x_min, y_min, x_max, y_max 
                     
